@@ -105,8 +105,7 @@ TreeNode *solve(vector<int> &arr,int i){
     newNode->left=solve(arr,2*i+1);
     newNode->right=solve(arr,2*i+2);
     return newNode;
-    
-}
+    }
 void convert(Node *head, TreeNode *&root) {
     vector<int> arr;
     Node *temp=head;
