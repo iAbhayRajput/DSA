@@ -11,8 +11,7 @@ class Solution {
             }
             else if(heights[i]>heights[st.top()]){
                 nsl[i]=st.top();
-            }
-            else{
+            }else{
                 while(!st.empty()&& heights[i]<=heights[st.top()])
                 {
                     st.pop();
