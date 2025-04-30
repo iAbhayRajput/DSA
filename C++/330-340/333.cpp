@@ -1,0 +1,27 @@
+class Solution {
+  public:
+  int f(Node* ref){
+      Node* temp=ref->next;
+      int ans=1;
+      while(temp!=ref){
+          temp=temp->next;
+          ans++;
+      }
+      return ans;
+  }
+    // Function to find the length of a loop in the linked list.
+    int countNodesinLoop(Node *head) {
+        // Code here
+        Node* slow=head, *fast=head;
+        while(slow && fast && fast->next){
+            slow=slow=slow->next;
+            fast=fast->next->next;
+            
+            if(slow==fast){
+                return f(slow);
+            }
+        }
+        
+        return 0;
+    }
+};
