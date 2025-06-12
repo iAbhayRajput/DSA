@@ -10,7 +10,6 @@ class Solution {
                 vec[i] = abs(arr[i] - x);
             }
         }
-
         vector<int> ans;
         while (k--) {
             int minDist = INT_MAX;
