@@ -2,7 +2,7 @@ class Solution {
   public:
       string maxSubseq(string& s, int k) {
         stack<char> st;
-        
+
         for(auto z : s){
           while((!st.empty()) && k && (st.top() < z)){
               st.pop();
